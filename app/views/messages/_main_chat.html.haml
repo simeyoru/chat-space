@@ -26,9 +26,10 @@
         = form.text_field :content, class: 'box__text', placeholder: 'type a message'
         = form.label :image ,class:'images' do
           = form.file_field :image, class: 'box__file-btn'
-          %span.box__icon
-            = icon('fas', 'image',class: 'icon')
-          = form.submit 'Send', class: 'send-btn'
+          %label{class: "input-box__image"}
+            = icon('fas', 'image')
+            %input{type: "file"}
+        = form.submit 'Send', class: 'send-btn'
         
     
 

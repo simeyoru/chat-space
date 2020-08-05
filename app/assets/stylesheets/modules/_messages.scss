@@ -139,7 +139,7 @@
   .box__text{
     border: none;
     height: 50px;
-    width: 87%;
+    width: 100%;
     padding: 0 45px 0 15px;
   }
   .images{
@@ -151,9 +151,10 @@
   .box__file-btn{
     display: none;
   }
-  .icon{
+  .input-box__image{
     line-height: 50px;
     font-size: 25px;
+    position: absolute;
   }
   .send-btn{
     background-color: #38AEF0;
@@ -163,7 +164,6 @@
     height: 50px;
     margin-left: 15px;
     padding: 0 30px;
-    margin-bottom: 10px;
   }
 
 }
