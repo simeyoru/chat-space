@@ -7,12 +7,41 @@
 .side_bar{
   width: 300px;
 
-  .side_bar__user-name{
+  &__user-name{
     height: 100px;
     background-color:#253141 ;
+    display: flex;
+    align-items: center; 
   }
+    &__side-box{
+      height: 20px;
+      width: 200px;
+      background-color: #253141;
+      color: #ffffff;
+      margin-left: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+      &__side-box2{
+      height: 20px;
+      width: 60px;
+      background-color:#253141;
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: right;
+    
+  }
+    &__edit{
+      color: #ffffff;
+      margin-right: 5px;
+      text-decoration: none;
+    }
+    &__cog{
+      color: #ffffff;
+    }
   
-  .side_bar__group-list{
+  &__group-list{
     height: calc(100vh - 100px);
     background-color: #2f3e51;
   }

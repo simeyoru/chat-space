@@ -1,5 +1,13 @@
 .side_bar
   .side_bar__user-name
-  
+    .side_bar__side-box
+      %p 
+        masa
+    .side_bar__side-box2
+      %ul
+        = link_to 'https://fontawesome.com/icons/edit?style=regular', class:"side_bar__edit" do
+          =icon('far', 'edit')
+        = link_to 'https://fontawesome.com/icons/cog?style=solid', class:"side_bar__cog" do
+          =icon('fas', 'cog')
   .side_bar__group-list
   
