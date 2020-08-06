@@ -4,8 +4,8 @@
       1
       .main_chat__group2
         member:123
-    .main_chat__right-group
-      = link_to('Edit','#')
+    .main_chat__right-group 
+      = link_to'Edit','#',class:'edit_link'
   .main_chat__message-list
     .main_chat__message-info
       .main_chat__message-info-username
@@ -28,7 +28,7 @@
           = form.file_field :image, class: 'box__file-btn'
           %label{class: "input-box__image"}
             = icon('fas', 'image')
-            %input{type: "file"}
+            %input{type: "file", class:'file2'}
         = form.submit 'Send', class: 'send-btn'
         
     
