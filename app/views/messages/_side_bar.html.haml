@@ -1,0 +1,23 @@
+.side_bar
+  .side_bar__user-name
+    .side_bar__list
+      .side_bar__side-box
+        %p 
+          masa
+      .side_bar__side-box2
+        %ul
+          = link_to '#', class:"side_bar__edit" do
+            =icon('far', 'edit')
+          = link_to '#', class:"side_bar__cog" do
+            =icon('fas', 'cog')
+
+  .side_bar__group-list
+    .side_bar__list2
+      .side_bar__account
+        %p
+          techcamp
+      .side_bar__message
+        %p
+          メッセージなし
+
+  

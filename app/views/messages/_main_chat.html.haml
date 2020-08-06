@@ -1,0 +1,37 @@
+.main_chat
+  .main_chat__group-info
+    .main_chat__group
+      1
+      .main_chat__group2
+        Member:123
+    .main_chat__right-group 
+      = link_to'Edit','#',class:'edit_link'
+  .main_chat__message-list
+    .main_chat__message-info
+      .main_chat__message-info-username
+        %p
+          123
+      .main_chat__message-info-date
+        %p 
+          2020/8/5
+    .main_chat__message
+      .main_chat__message-content
+        %p
+          こんにちは
+ 
+ 
+  .main_chat__footer
+    = form_with do |form| 
+      .box
+        = form.text_field :content, class: 'box__text', placeholder: 'type a message'
+        = form.label :image ,class:'images' do
+          = form.file_field :image, class: 'box__file-btn'
+          %label{class: "input-box__image"}
+            = icon('fas', 'image')
+            %input{type: "file", class:'file2'}
+        = form.submit 'Send', class: 'send-btn'
+        
+    
+
+        
+    
