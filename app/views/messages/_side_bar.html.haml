@@ -3,12 +3,12 @@
     .side_bar__list
       .side_bar__side-box
         %p 
-          masa
+          = current_user.name
       .side_bar__side-box2
         %ul
           = link_to '#', class:"side_bar__edit" do
             =icon('far', 'edit')
-          = link_to '#', class:"side_bar__cog" do
+          = link_to edit_user_path(current_user) do
             =icon('fas', 'cog')
 
   .side_bar__group-list
