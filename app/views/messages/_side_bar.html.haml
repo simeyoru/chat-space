@@ -2,8 +2,7 @@
   .side_bar__user-name
     .side_bar__list
       .side_bar__side-box
-        %p 
-          masa
+        = current_user.name
       .side_bar__side-box2
         %ul
           = link_to new_group_path(), class:"side_bar__edit" do
@@ -14,10 +13,10 @@
   .side_bar__group-list
     - current_user.groups.each do |group|
       .side_bar__list2
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           .side_bar__account
             = group.name
           .side_bar__message
-            メッセージなし
+            = group.show_last_message
 
   
