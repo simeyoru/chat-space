@@ -49,7 +49,7 @@ $(function(){
           insertHTML += buildHTML(message)
         });
         $('.main_chat__message-list').append(insertHTML);
-        $('.main_chat__message-list').animate({ scrollTop: $('.main_chat__message-list')[0].scrollHeight});
+        $('.main_chat__message-list').animate({ scrollTop: $('.main_chat__message-list')[0].scrollHeight},'fast');
       }
     })
     .fail(function() {
